@@ -1,0 +1,8 @@
+.testimonialCard{
+    border: 1px solid hsl(0, 0, 90%);
+    max-width: 20vw;
+    &__image{
+        width: 100%;
+        height: auto;
+    }
+}
