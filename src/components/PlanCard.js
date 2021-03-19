@@ -9,7 +9,10 @@ export default function PlanCard({ heading, summary, price, link, features, getF
             <p className="title__summary">{summary}</p>
             <p className="title__price">{price}</p>
             <p className="title__conditions">/user/month*<br/>(billed annually)</p>
-            <a href={link} className="title__link">Try for <span className="title__link--caps">free</span> &gt;</a>
+            <a href={link} className="title__link"
+            // eslint-disable-next-line 
+             onClick={() => gtag("event", "cta", {"content_type":ctaLink} )}
+            >Try for <span className="title__link--caps">free</span> &gt;</a>
             </section>
 
             <section className="planCard__features">
